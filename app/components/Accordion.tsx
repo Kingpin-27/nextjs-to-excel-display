@@ -11,7 +11,7 @@ import { DetailsContent } from "./Table";
 export function DetailsLayout({ data }: { data: any[] }) {
   const stringifyRow = (object: any): string => {
     return Object.keys(object)
-      .map((key) => `${key}: ${object[key]?.toString()}`)
+      .map((key) => `*${key}*: ${object[key]?.toString()}`)
       .join("\n");
   };
   const copyToClipboard = (object: any) => {
