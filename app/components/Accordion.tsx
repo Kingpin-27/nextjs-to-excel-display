@@ -23,8 +23,8 @@ export function DetailsLayout({ data }: { data: any[] }) {
       {data.map((row, index) => (
         <AccordionPanel>
           <AccordionTitle>
-            {index + 1}) {row["Name"]} - {row["Nakshatram"]} -{" "}
-            {row["Year"] || "Not Given"}
+            {index + 1}) {row["Name"]} - {row["Star"]} -{" "}
+            {row["Born in"] || "Not Given"} - {row["Gotram"] || "Not Given"}
           </AccordionTitle>
           <AccordionContent>
             <div className="flex flex-col">
